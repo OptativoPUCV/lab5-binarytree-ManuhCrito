@@ -94,9 +94,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
                 return node->pair;
             }
 
-            if (node->pair->key < key)
+            if (tree->lower_than(node->pair->key,key))
                 node = node->right;
-            else if (node->pair->key > key)
+            else
                 node = node->left;
         }
     return NULL;
