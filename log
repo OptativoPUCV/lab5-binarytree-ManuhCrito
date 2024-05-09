@@ -84,3 +84,9 @@ treemap.c:64:15: error: unused variable ‘node’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 68536bd
+Thu 09 May 2024 11:55:58 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  11|6
+total_score: 15/70
+c87fd57
