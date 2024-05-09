@@ -2,3 +2,12 @@ Thu 09 May 2024 10:39:02 PM UTC:
  tests:  1|8
 total_score: 0/70
 2fe0efd
+Thu 09 May 2024 10:52:53 PM UTC: 
+ treemap.c | 47 ++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 32 insertions(+), 15 deletions(-)
+In file included from test.c:4:
+treemap.c:73:1: error: expected ‘;’, ‘,’ or ‘)’ before ‘{’ token
+   73 | {
+      | ^
+Compilation failed
+c02333b
