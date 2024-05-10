@@ -191,7 +191,7 @@ Pair * upperBound(TreeMap * tree, void* key)
             {
                 tree->current = node;
                 nodoUb = node;
-                break;
+                return nodoUb->pair;
             }
 
             if (tree->lower_than(node->pair->key, key))
