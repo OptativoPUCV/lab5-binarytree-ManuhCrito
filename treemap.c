@@ -201,10 +201,11 @@ Pair * upperBound(TreeMap * tree, void* key)
             else
             {
                 nodoUb = node;
+                if (node->right == NULL) return nodoUb->pair;
                 node = node->right;
             }
         }
-    return nodoUb->pair;
+    return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree)
