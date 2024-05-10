@@ -210,6 +210,6 @@ Pair * nextTreeMap(TreeMap * tree)
                 node = node->left;
             }
         tree->current = node;
-        return node->pair;
     }
+    return node->pair;
 }
