@@ -195,12 +195,13 @@ Pair * upperBound(TreeMap * tree, void* key)
             }
             if (tree->lower_than(node->pair->key,key))
             {
-                nodoUb = node;
                 node = node->right;
+                if (tree->lower_than(node->pair->key, key)) nodoUb = node;
             }
             else
             {
                 node = node->left;
+                if (tree->lower_than(node->pair->key, key)) nodoUb = node;
             }
         }
     return nodoUb->pair;
