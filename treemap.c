@@ -201,7 +201,6 @@ Pair * upperBound(TreeMap * tree, void* key)
             else
             {
                 nodoUb = node;
-                if (node->right == NULL) break;
                 node = node->right;
             }
         }
