@@ -205,7 +205,10 @@ Pair * nextTreeMap(TreeMap * tree)
     if (node->right != NULL)
     {
         node = node->right;
-        minimum(node);
+        while (node->left != NULL)
+            {
+                node = node->left;
+            }
         tree->current = node;
         return node->pair;
     }
